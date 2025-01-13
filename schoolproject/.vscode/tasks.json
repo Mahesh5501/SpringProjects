@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "schoolproject",
+        "command": "bash",
+        "type": "shell",
+        "args": [
+          "-c",
+          "gradle build; WAR_FILE=\"build/libs/*\"; TOMCAT_WEBAPPS_DIR=\"C:/Users/mahesh.pettem/OneDrive - Entain Group/Documents/Projects/apache-tomcat-9.0.93/webapps\"; [[ -f \"$WAR_FILE\" ]] && cp \"$WAR_FILE\" \"$TOMCAT_WEBAPPS_DIR\""
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  //cp build/libs/* "C:/Users/mahesh.pettem/OneDrive - Entain Group/Documents/Projects/apache-tomcat-9.0.93/webapps/"
+  //gradle build && cp build/libs/* "C:/Users/mahesh.pettem/OneDrive - Entain Group/Documents/Projects/apache-tomcat-9.0.93/webapps/"

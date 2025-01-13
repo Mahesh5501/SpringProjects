@@ -1,0 +1,4 @@
+// Web Module build.gradle
+dependencies {
+    compile project(':service-module')
+}
