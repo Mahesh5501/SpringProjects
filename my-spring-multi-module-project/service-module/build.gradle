@@ -1,4 +1,0 @@
-dependencies {
-    compile  'org.springframework:spring-context:5.3.22'
-    // Other dependencies
-}
